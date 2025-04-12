@@ -6,7 +6,7 @@ RUN dnf -y update && \
     dnf clean all
 
 # Copy website files to Apache's root directory!
-COPY . /var/www/html
+ADD . /var/www/html
 
 # Expose port 80 if needed
 EXPOSE 80
