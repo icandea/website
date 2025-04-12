@@ -5,7 +5,7 @@ RUN dnf -y update && \
     dnf -y install httpd && \
     dnf clean all
 
-# Copy website files to Apache's root directory
+# Copy website files to Apache's root directory!
 COPY . /var/www/html
 
 # Expose port 80 if needed
